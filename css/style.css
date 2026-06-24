@@ -185,7 +185,7 @@ a {
 
 /* Header */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -196,7 +196,7 @@ a {
   justify-content: space-between;
   padding-inline: clamp(1.25rem, 4vw, 2.5rem);
   background: rgba(8, 8, 13, 0.75);
-  backdrop-filter: none;
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -308,7 +308,7 @@ a {
   min-height: 92svh;
   display: flex;
   align-items: center;
-  padding-top: calc(var(--header-h) + env(safe-area-inset-top));
+  padding-top: var(--header-h);
   padding-bottom: 2rem;
 }
 
@@ -1043,29 +1043,13 @@ a {
 /* Scroll reveal system */
 .reveal-item {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(22px);
+  transition:
+    opacity 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
 }
 
-.reveal-group.is-visible > .reveal-item,
-.reveal-group.is-visible .reveal-item {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(150px);
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 .reveal-group.is-visible > .reveal-item:nth-child(1),
 .reveal-group.is-visible > .reveal-item:nth-child(1) .reveal-item {
   transition-delay: 0ms;
