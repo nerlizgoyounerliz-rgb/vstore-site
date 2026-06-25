@@ -40,7 +40,7 @@ const VOLTIX_PRICES = {
 
           name: "Fortnite Crew",
 
-          price: "279 ₽",
+          price: "299 ₽",
 
           note: "1 месяц",
 
@@ -53,7 +53,7 @@ const VOLTIX_PRICES = {
           brand: "Fortnite",
           title: "800 V-Bucks",
           name: "Fortnite 800 V-Bucks",
-          price: "XXX ₽",
+          price: "429 ₽",
           label: "Валюта",
           note: "800 V-Bucks",
           delivery: "5–15 мин",
@@ -64,7 +64,7 @@ const VOLTIX_PRICES = {
           brand: "Fortnite",
           title: "2400 V-Bucks",
           name: "Fortnite 2400 V-Bucks",
-          price: "XXX ₽",
+          price: "969 ₽",
           label: "Валюта",
           note: "2400 V-Bucks",
           delivery: "5–15 мин",
@@ -75,7 +75,7 @@ const VOLTIX_PRICES = {
           brand: "Fortnite",
           title: "4500 V-Bucks",
           name: "Fortnite 4500 V-Bucks",
-          price: "XXX ₽",
+          price: "1499 ₽",
           label: "Валюта",
           note: "4500 V-Bucks",
           delivery: "5–15 мин",
@@ -86,7 +86,7 @@ const VOLTIX_PRICES = {
           brand: "Fortnite",
           title: "12500 V-Bucks",
           name: "Fortnite 12500 V-Bucks",
-          price: "XXX ₽",
+          price: "3499 ₽",
           label: "Валюта",
           note: "12500 V-Bucks",
           delivery: "5–15 мин",
@@ -131,6 +131,7 @@ const VOLTIX_PRICES = {
   ],
 
 };
+
 
 
 
